@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kancelaria Radcy Prawnego Maja Michalik – Koszalin</title>
+<meta name="description" content="Radca prawny Maja Michalik, Koszalin. Porady prawne, sporządzanie pism procesowych, umów i opinii, reprezentacja przed sądami i organami administracji.">
+<link rel="canonical" href="https://mmichalik.com/">
+<meta property="og:title" content="Kancelaria Radcy Prawnego Maja Michalik – Koszalin">
+<meta property="og:description" content="Porady prawne, pisma procesowe, umowy, opinie i reprezentacja przed sądami. Koszalin.">
+<meta property="og:image" content="https://mmichalik.com/img/hero.jpg">
+<meta property="og:url" content="https://mmichalik.com/">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f5f1; --paper:#ffffff; --ink:#1d2330; --muted:#5d6574; --line:#e3ded5;
+  --navy:#1c2b4a; --navy-ink:#ffffff; --accent:#9a7a4c; --accent-soft:#f1ebe1;
+  --hero-shade:rgba(20,28,45,.62);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#12161f; --paper:#1a1f2b; --ink:#e9e6e0; --muted:#a3a9b5; --line:#2c3342;
+    --navy:#0d1422; --navy-ink:#ffffff; --accent:#c9a874; --accent-soft:#252a35;
+    --hero-shade:rgba(8,12,20,.72);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#12161f; --paper:#1a1f2b; --ink:#e9e6e0; --muted:#a3a9b5; --line:#2c3342;
+  --navy:#0d1422; --navy-ink:#ffffff; --accent:#c9a874; --accent-soft:#252a35;
+  --hero-shade:rgba(8,12,20,.72);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Source Sans 3",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.15;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600}
+
+/* header */
+header{position:sticky;top:0;z-index:10;background:var(--navy);color:var(--navy-ink)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:36px;height:36px}
+.brand b{font-family:"Cormorant Garamond",Georgia,serif;font-size:22px;font-weight:600;letter-spacing:.04em;display:block;line-height:1}
+.brand small{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:.75;margin-top:3px}
+nav{display:flex;gap:22px;font-size:15px}
+nav a{text-decoration:none;opacity:.85}
+nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
+@media (max-width:640px){ nav{display:none} }
+
+/* hero */
+.hero{position:relative;color:#fff;background:#222 url("img/hero.jpg") center/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:var(--hero-shade)}
+.hero .wrap{position:relative;padding:110px 20px 100px}
+.hero .eyebrow{color:#e4cfa8}
+.hero h1{font-size:clamp(40px,7vw,68px);margin:14px 0 18px;letter-spacing:.01em}
+.hero p{max-width:560px;font-size:19px;color:#e8e6e2;margin:0 0 30px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 22px;border-radius:4px;text-decoration:none;font-weight:600;font-size:16px}
+.btn.primary{background:#fff;color:var(--navy)}
+.btn.ghost{border:1px solid rgba(255,255,255,.6);color:#fff}
+.btn:hover{filter:brightness(.95)}
+
+section{padding:80px 0;border-bottom:1px solid var(--line)}
+section h2{font-size:clamp(32px,4.5vw,44px);margin:10px 0 22px}
+
+/* o mnie */
+.about{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center}
+.about img{border-radius:6px;aspect-ratio:7/6;object-fit:cover;width:100%}
+.about p{margin:0 0 14px}
+.sign{font-family:"Cormorant Garamond",Georgia,serif;font-size:26px;color:var(--accent);margin-top:8px}
+@media (max-width:780px){ .about{grid-template-columns:1fr;gap:28px} }
+
+/* oferta */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:28px 26px}
+.card .num{font-family:"Cormorant Garamond",Georgia,serif;font-size:36px;color:var(--accent);line-height:1}
+.card h3{font-size:26px;margin:12px 0 10px}
+.card p{margin:0;color:var(--muted)}
+@media (max-width:860px){ .cards{grid-template-columns:1fr} }
+.scope{margin-top:36px}
+.scope ul{margin:8px 0 0;padding-left:20px}
+.scope li{margin:3px 0}
+.scope h3{font-size:24px}
+@media (max-width:780px){ .scope{grid-template-columns:1fr} }
+
+/* klienci */
+.band{background:var(--accent-soft)}
+.clients{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.clients span{background:var(--paper);border:1px solid var(--line);padding:8px 14px;border-radius:999px;font-size:15px}
+
+/* kontakt */
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.contact .item{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:22px}
+.contact .big{font-family:"Cormorant Garamond",Georgia,serif;font-size:28px;font-weight:600;text-decoration:none;display:block;margin-top:6px;word-break:break-word}
+.contact .big:hover{color:var(--accent)}
+.contact .sub{color:var(--muted);font-size:15px;margin-top:4px}
+
+footer{background:var(--navy);color:#cfd4dd;font-size:14px;padding:36px 0}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+footer p{margin:0 0 6px;max-width:640px}
+footer a{color:#fff}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <img src="img/mark.png" alt="">
+      <span><b>MAJA MICHALIK</b><small>Kancelaria Radcy Prawnego</small></span>
+    </a>
+    <nav>
+      <a href="#o-mnie">O kancelarii</a>
+      <a href="#oferta">Oferta</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow">Kancelaria Radcy Prawnego · Koszalin</div>
+    <h1>Maja Michalik<br>radca prawny</h1>
+    <p>Porady prawne, pisma procesowe, umowy i opinie oraz reprezentacja przed sądami i organami administracji publicznej.</p>
+    <div class="btns">
+      <a class="btn primary" href="tel:+48794945400">Zadzwoń: 794 945 400</a>
+      <a class="btn ghost" href="#oferta">Zakres usług</a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<section id="o-mnie">
+  <div class="wrap about">
+    <img src="img/temida.jpg" alt="Figurka Temidy z wagą na tle książek prawniczych i globusa" width="700" height="600" loading="lazy">
+    <div>
+      <div class="eyebrow">O kancelarii</div>
+      <h2>Radca prawny Maja Michalik</h2>
+      <p>Jestem absolwentką Wydziału Prawa i Administracji Uniwersytetu Szczecińskiego. W 2014 roku zdałam egzamin radcowski i zostałam wpisana na listę radców prawnych prowadzoną przez Okręgową Izbę Radców Prawnych w Koszalinie.</p>
+      <p>Świadczę usługi doradztwa prawnego: udzielam porad i konsultacji prawnych, sporządzam pisma procesowe, umowy i opinie oraz prowadzę zastępstwo procesowe w postępowaniu cywilnym, administracyjnym, gospodarczym, przed sądem pracy, w postępowaniu egzekucyjnym, przed organami administracji publicznej, w postępowaniu mediacyjnym i rejestrowym.</p>
+      <div class="sign">Maja Michalik</div>
+    </div>
+  </div>
+</section>
+
+<section id="oferta">
+  <div class="wrap">
+    <div class="eyebrow">Kompleksowa pomoc prawna</div>
+    <h2>Oferta kancelarii</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="num">01</div>
+        <h3>Reprezentowanie</h3>
+        <p>Reprezentacja Klientów przed sądami powszechnymi, administracyjnymi oraz Sądem Najwyższym, a także przed organami administracji publicznej i organami egzekucyjnymi. Udział w negocjacjach i postępowaniach mediacyjnych.</p>
+      </div>
+      <div class="card">
+        <div class="num">02</div>
+        <h3>Sporządzanie pism</h3>
+        <p>Pisma procesowe, projekty umów oraz opinie prawne przygotowywane w oparciu o wiedzę i doświadczenie zdobyte w praktyce zawodowej.</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h3>Porady prawne</h3>
+        <p>Profesjonalne porady i konsultacje prawne oraz wskazanie rozwiązań najkorzystniejszych dla Klienta w jego sytuacji.</p>
+      </div>
+    </div>
+
+    <div class="scope">
+      <div>
+        <h3>Zastępstwo procesowe w postępowaniach</h3>
+        <ul>
+          <li>cywilne i gospodarcze</li>
+          <li>przed sądem pracy</li>
+          <li>administracyjne i sądowoadministracyjne</li>
+          <li>egzekucyjne</li>
+          <li>mediacyjne</li>
+          <li>rejestrowe</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="eyebrow">Dla kogo</div>
+    <h2>Profesjonalne porady prawne</h2>
+    <p style="max-width:720px;margin:0 0 18px">Kancelaria świadczy usługi prawne w szczególności dla:</p>
+    <div class="clients">
+      <span>klientów indywidualnych</span>
+      <span>przedsiębiorców</span>
+      <span>spółek prawa handlowego</span>
+      <span>instytucji</span>
+      <span>jednostek samorządu terytorialnego</span>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" style="border-bottom:0">
+  <div class="wrap">
+    <div class="eyebrow">Pomoc prawna Koszalin</div>
+    <h2>Kontakt</h2>
+    <div class="contact" id="contactBox">
+      <div class="item">
+        <div class="eyebrow">Telefon</div>
+        <a class="big" href="tel:+48794945400">+48 794 945 400</a>
+              </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p><b style="color:#fff">Kancelaria Radcy Prawnego Maja Michalik</b></p>
+      <p id="footerData">Radca prawny wpisany na listę radców prawnych prowadzoną przez Okręgową Izbę Radców Prawnych w Koszalinie.</p>
+      <p>Informacje na stronie nie stanowią porady prawnej ani oferty w rozumieniu Kodeksu cywilnego. Strona nie używa plików cookies ani narzędzi śledzących.</p>
+    </div>
+    <div>© <span id="yr">2026</span> Maja Michalik</div>
+  </div>
+</footer>
+
+<script>
+/* ===== DANE KONTAKTOWE – uzupełnij i zostaw puste, czego nie publikujemy ===== */
+const KONTAKT = {
+  email: "poczta@mmichalik.com",
+  adres: "ul. Marszałka Józefa Piłsudskiego 8/9, 75-509 Koszalin",
+  nip: "6692485010"
+};
+/* ============================================================================ */
+(function(){
+  const box=document.getElementById('contactBox');
+  function add(label,html,sub){
+    const d=document.createElement('div');d.className='item';
+    d.innerHTML='<div class="eyebrow">'+label+'</div>'+html+(sub?'<div class="sub">'+sub+'</div>':'');
+    box.appendChild(d);
+  }
+  if(KONTAKT.email) add('E-mail','<a class="big" style="font-size:24px" href="mailto:'+KONTAKT.email+'">'+KONTAKT.email+'</a>');
+  if(KONTAKT.adres) add('Kancelaria','<div class="big" style="font-size:22px">'+KONTAKT.adres+'</div>');
+  const f=document.getElementById('footerData');
+  const extra=[KONTAKT.adres, KONTAKT.nip?('NIP '+KONTAKT.nip):'', KONTAKT.email].filter(Boolean).join(' · ');
+  if(extra) f.textContent=extra+'. '+f.textContent;
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
